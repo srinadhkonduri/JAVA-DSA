@@ -72,7 +72,7 @@ Integral literals For Integral data types (byte, short, int, long), we can speci
 4 ways:- a) Decimal literals (Base 10) int x = 101;
 b) Octal literals (Base 8) int x = 0146; // should be prefix with 0.
 
-c) Hexa-decimal literals (Base 16) int x = 0X123Face; //The hexa-decimal number should be
+c) Hex - decimal literals (Base 16) int x = 0X123Face; //The hexa-decimal number should be
 prefix with 0X or 0x.
 Note: Although Java is case - sensitive but here 0X and 0x is treated as same (doglapan)
 

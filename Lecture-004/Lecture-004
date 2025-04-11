@@ -17,6 +17,7 @@ main is the name of the method!
 String is a data type
 [] denotes an array
 args is the local variable name which is passed as a function parameter!
+
 Why main method uses public keyword?
 Public is an Access modifier, which specifies from where and who can access the method.
 Making the main() method public makes it globally available. It is made public so that
