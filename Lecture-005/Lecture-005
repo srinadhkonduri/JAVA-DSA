@@ -1,16 +1,17 @@
 Data Types ->
 Primitive data types - includes byte, short, int, long, float, double, boolean and char.
-A primitive data type specifies the size and type of variable values, and it has no additional methods.
+A primitive data type specifies the size and type of variable values, and it has no additional
+methods.
 
 Data Type	Size	Range
-byte	1 byte	Stores whole numbers from -128 to 127
-short	2 bytes	Stores whole numbers from -32,768 to 32,767
-int	    4 bytes	Stores whole numbers from -2,147,483,648 to 2,147,483,647
-long	8 bytes	Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
-float	4 bytes	Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
-double	8 bytes	Stores fractional numbers. Sufficient for storing 15 decimal digits
-boolean	1 bit	Stores true or false values
-char	2 bytes	Stores a single character/letter or ASCII values
+byte	    1 byte	Stores whole numbers from -128 to 127
+short	    2 bytes	Stores whole numbers from -32,768 to 32,767
+int	        4 bytes	Stores whole numbers from -2,147,483,648 to 2,147,483,647
+long	    8 bytes	Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+float	    4 bytes	Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
+double	    8 bytes	Stores fractional numbers. Sufficient for storing 15 decimal digits
+boolean	    1 bit	Stores true or false values.
+char	    2 bytes	Stores a single character/letter or ASCII values.
 
 Non-primitive data types - such as String, Arrays and Classes
 
@@ -63,13 +64,16 @@ Names can contain letters, digits, underscores, and dollar signs
 Names must begin with a letter
 Names should start with a lowercase letter and it cannot contain whitespace
 Names can also begin with $ and _
-Names are case sensitive ("myVar" and "myvar" are different variables)
+Names are case sensitive ("myVar" and "my var" are different variables)
 Reserved words (like Java keywords, such as int or boolean) cannot be used as names
+
 Literals in Java
 Literals in Java is a synthetic representation of boolean, numeric, character, or string data.
 
 Integral literals For Integral data types (byte, short, int, long), we can specify literals in
-4 ways:- a) Decimal literals (Base 10) int x = 101;
+4 ways:-
+a) Decimal literals (Base 10) int x = 101;
+
 b) Octal literals (Base 8) int x = 0146; // should be prefix with 0.
 
 c) Hex - decimal literals (Base 16) int x = 0X123Face; //The hexa-decimal number should be
@@ -82,6 +86,7 @@ suffixed with l or L. There is no way to specify byte and short literals explici
 indirectly we can specify. Whenever we are assigning integral literal to the byte variable
 and if the value is within the range of byte then the compiler treats it automatically as
 byte literals. /
+
 
 Floating-Point literal For Floating-point data types, we can specify literals in only decimal
 form, and we cant specify in octal and Hexadecimal forms.
