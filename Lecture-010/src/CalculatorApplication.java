@@ -6,12 +6,12 @@ public class CalculatorApplication {
         CalculatorApplication obj = new CalculatorApplication();
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Welcome to Calculator Application - By Java Plus DSA");
+        System.out.println("Welcome to Calculator Application.");
 
         // Take input from user and decide which operation to perform
         do {
             System.out.println("Choose an Operation: ( *, +, -, %, / )");
-            System.out.print("->");
+            System.out.print("-> : ");
             String input = sc.next();
             char ch = input.charAt(0);
             if(input.length()!=1) {
@@ -27,7 +27,6 @@ public class CalculatorApplication {
         System.out.println("Thanks for using our service");
 
     }
-
     /*
     This function will prompt the user to enter his choice on exiting the program.
     If user chooses 'y' then program will exit.
@@ -38,7 +37,7 @@ public class CalculatorApplication {
     public boolean exitProgram(){
         Scanner sc = new Scanner(System.in);
         int times = 0;
-        int retry = 5;
+        int retry = 3;
         for(times = 0; times < retry; times++){
             System.out.println("Do you want to continue? (y/n)");
             String exitInput = sc.next();
@@ -51,11 +50,8 @@ public class CalculatorApplication {
                 System.out.println("Wrong input, please try again");
             }
         }
-        if(times >= retry){
-            System.out.println("Maximum retry count exceeded! Exiting forcefully");
-            return true;
-        }
-        return false;
+        System.out.println("Maximum retry count exceeded! Exiting forcefully");
+        return true;
     }
 
     // function to take integer as input
