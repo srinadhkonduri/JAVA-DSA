@@ -1,24 +1,30 @@
 package com.Programs;
 
+import java.util.Scanner;
 
 public class MathForDsa {
     public static void main(String[] args) {
-        decimalToBinary(45,8);
-        binaryToDecimal(1010111001,2);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the  decimal number : ");
+        int decimal = sc.nextInt();
+        System.out.println("Enter the base value : ");
+        int base = sc.nextInt();
+        decimalToBinary(decimal,base);
+        binaryToDecimal(1111,2);
         findEvenOrOdd(44);
         reverse(123456);
-        int res = power(2,3);
-        System.out.println(res);
-        double result = fastExponential(4,3);
-        System.out.println(result);
+        int res = power(2,2);
+        System.out.println("power is "+ res);
+        double result = fastExponential(8,3);
+        System.out.println("fast exponential is : " + result);
     }
     static void decimalToBinary(int decimalToNum, int base){
         int resNum = 0;
         int power = 0;
         while (decimalToNum > 0){
             int rem = decimalToNum%base;
-            decimalToNum /= base;
-            resNum += rem * power(10,power);
+            decimalToNum = decimalToNum / base;
+            resNum = resNum + rem * power(10,power);
             power++;
         }
         System.out.println("result is " + resNum);
@@ -27,10 +33,10 @@ public class MathForDsa {
     static void binaryToDecimal(int number, int base){
         int resNum = 0;
         int power = 0;
-        while (number > 0 ){
+        while (number > 0){
             int rem = number % 10;
             number /= 10;
-            resNum += rem * power(base,power);
+            resNum = resNum + rem * power(base,power);
             power++;
         }
         System.out.println("result is " + resNum);
@@ -63,14 +69,14 @@ public class MathForDsa {
     }
 
     static double fastExponential(int base, int exp){
-        double res = 1;
-        while (exp > 0){
-            if (exp %2 != 0){
-                res = res * base;
-            }
-            exp = exp / 2;
-            base = base * base;
+    double res = 1;
+    while (exp > 0){
+        if (exp %2 != 0){
+            res = res * base;
         }
-        return res;
+        exp = exp / 2;
+        base = base * base;
+    }
+    return res;
     }
 }
