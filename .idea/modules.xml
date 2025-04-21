@@ -14,6 +14,8 @@
       <module fileurl="file://$PROJECT_DIR$/Lecture-010/Lecture-010.iml" filepath="$PROJECT_DIR$/Lecture-010/Lecture-010.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lecture-011/Lecture-011_Maths_For_DSA_Part_1.iml" filepath="$PROJECT_DIR$/Lecture-011/Lecture-011_Maths_For_DSA_Part_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lecture-012_MathsForDSA_Part_2/Lecture-012_MathsForDSA_Part_2.iml" filepath="$PROJECT_DIR$/Lecture-012_MathsForDSA_Part_2/Lecture-012_MathsForDSA_Part_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lecture-014/Lecture-014.iml" filepath="$PROJECT_DIR$/Lecture-014/Lecture-014.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lecture-015/Lecture-015.iml" filepath="$PROJECT_DIR$/Lecture-015/Lecture-015.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java-DSA.iml" filepath="$PROJECT_DIR$/.idea/java-DSA.iml" />
     </modules>
   </component>

@@ -8,7 +8,7 @@ public class MathsForDsaPart2 {
         countDigitsViaLog(0);
         armStrongNumber(153);
         reverse(121);
-        printAllDivisor(36);
+        printAllDivisor(12);
         sieveAlgorithm(40);
         GCD(24,36);
         euclideanGcd(24,36);
@@ -82,10 +82,10 @@ public class MathsForDsaPart2 {
         int sqroot = (int)Math.sqrt(num);
         while (counter <= sqroot){
             if (num % counter == 0){
-                System.out.println(counter + " is a divisor of " + num);
+                System.out.println(counter + " is a divisor of ->" + num);
                 int otherNumber = num/counter;
                 if (otherNumber != counter)
-                    System.out.println(otherNumber + " is a divisor of" + num);
+                    System.out.println(otherNumber + " is a divisor of : " + num);
             }
             counter++;
         }
