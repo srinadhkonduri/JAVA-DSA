@@ -12,11 +12,12 @@ public class LinearSearch {
                 {2,5,7,9}, // 23
                 {3,4,5,2}, // 14
                 {8,5,6,3}, // 22
-                {5,0,4,6}  // 15
+                {5,-1,4,6}  // 15
         };
         linearSearch2D(arr,5,true);
         multipleLinearSearch2D(arr,5);
         maxSumSubArrayIn2DArray(arr);
+        findMaxAndMinElement(arr);
     }
 
     // -----------------------------------------------------------
@@ -121,11 +122,12 @@ public class LinearSearch {
         int min = Integer.MAX_VALUE; // Initialize to largest integer value
 
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > max) {
-                max = arr[i]; // Update max if current element is greater
+            int j = arr[i];
+            if (j > max) {
+                max = j; // Update max if current element is greater
             }
-            if (arr[i] < min) {
-                min = arr[i]; // Update min if current element is smaller
+            if (j < min) {
+                min = j; // Update min if current element is smaller
             }
         }
 
@@ -293,5 +295,53 @@ public class LinearSearch {
         System.out.println("maximum sum sub array is : " + max + ", " + resIndex);
         // Output format: max sum value and corresponding row index
     }
+    // CREATING A METHOD TO FIND THE MAX ELEMENT IN THE 2D ARRAY
+    /**
+     * This method finds and prints the maximum and minimum elements
+     * from a given 2D array (matrix).
+     *
+     * @param arr The input 2D array of integers.
+     *
+     * 💡 Purpose:
+     * To determine the largest and smallest values in a 2D array by
+     * checking each element.
+     *
+     * 🧠 Steps:
+     * 1. Initialize `max` with the smallest possible integer.
+     * 2. Initialize `min` with the largest possible integer.
+     * 3. Traverse each element of the 2D array using nested loops.
+     * 4. For each element, update `max` if it is greater than current `max`.
+     * 5. Similarly, update `min` if it is smaller than current `min`.
+     * 6. Print the final values of `max` and `min`.
+     */
+    public static void findMaxAndMinElement(int[][] arr) {
 
+        // Step 1: Initialize max to the smallest integer value
+        int max = Integer.MIN_VALUE;
+
+        // Step 2: Initialize min to the largest integer value
+        int min = Integer.MAX_VALUE;
+
+        // Step 3: Loop through each row of the 2D array
+        for (int i = 0; i < arr.length; i++) {
+
+            // Step 4: Loop through each element (column) of the current row
+            for (int j = 0; j < arr[i].length; j++) {
+
+                // Step 5: If current element is greater than max, update max
+                if (arr[i][j] > max) {
+                    max = arr[i][j];
+                }
+
+                // Step 6: If current element is smaller than min, update min
+                if (arr[i][j] < min) {
+                    min = arr[i][j];
+                }
+            }
+        }
+
+        // Step 7: Print the maximum and minimum values found in the 2D array
+        System.out.println("The max element in the given 2D array is : " + max);
+        System.out.println("The minimum element in the given 2D array is : " + min);
+    }
 }

@@ -323,5 +323,4 @@ public class Arrays {
         // Step 1: Delete element from the specific row (1D array)
         delete(arr[pos1], pos2); // Call the existing delete method on the specific row
     }
-
 }
